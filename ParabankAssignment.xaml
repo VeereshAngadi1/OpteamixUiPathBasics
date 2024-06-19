@@ -1,0 +1,856 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ParabankAssignment" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="848.8,10456" sap2010:WorkflowViewState.IdRef="ParabankAssignment_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ParabankAssignment" sap:VirtualizedContainerService.HintSize="512,10391.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ParaBank | Welcome | Online Banking" sap:VirtualizedContainerService.HintSize="449.6,4089.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,3800.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="DataIn" />
+              <Variable x:TypeArguments="x:String" Name="DataClean" />
+              <Variable x:TypeArguments="x:String" Name="Status" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/index.htm" CVScreenId="acdf4263-7aab-4359-acdc-98f8f2a8cd11" CvTextArea="524, 722, 61, 18" CvTextArgument="Register" CvType="Text" DesignTimeRectangle="525, 721, 60, 18" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Register' parentid='loginPanel' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Register' parentid='loginPanel' tag='A' type='' class='' check:innerText='Register' /&gt;" Guid="9b7d440b-4d01-4b81-bca8-9f8340af1905" InformativeScreenshot="bb0d5ac9b3b25191a6d2494103641dc2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Welcome | Online Banking' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="acdf4263-7aab-4359-acdc-98f8f2a8cd11" CvTextArea="524, 698, 126, 18" CvTextArgument="Forgot login info?" CvType="Text" DesignTimeRectangle="525, 695, 205, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' parentid='loginPanel' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='loginPanel' tag='P' class='' aaname='' check:innerText='Forgot login info?' /&gt;" Guid="1544b751-94fc-4c3b-b531-eaf1eb7dcc64" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'First Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Text="Dhrubb" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvElementArea="929, 643, 259, 25" CvType="InputBox" DesignTimeRectangle="932, 644, 257, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.firstName' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.firstName' type='text' tag='INPUT' class='input' aaname='' /&gt;" Guid="0d62f092-93f5-4318-9dbc-7ab25553e07d" InformativeScreenshot="6bb66620bf8350bcaa8781bd4c9b1dae.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Register for Free Online Account Access' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvTextArea="836, 646, 89, 16" CvTextArgument="First Name:" CvType="Text" DesignTimeRectangle="837, 645, 90, 18" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='First Name:' check:innerText='First Name:' /&gt;" Guid="bc8dfa38-482f-4b49-99d5-b3410ea25afc" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Last Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Text="Guptha" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvElementArea="930, 672, 259, 25" CvType="InputBox" DesignTimeRectangle="932, 673, 257, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.lastName' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.lastName' type='text' tag='INPUT' class='input' aaname='' /&gt;" Guid="d390f75d-8bff-45b4-8df6-a6bff40ffaff" InformativeScreenshot="d4a01ea66b4d495458794a170bb21ea6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Register for Free Online Account Access' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvTextArea="838, 676, 88, 16" CvTextArgument="Last Name:" CvType="Text" DesignTimeRectangle="839, 675, 88, 18" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Last Name:' check:innerText='Last Name:' /&gt;" Guid="cdd9607f-f4b7-4f90-a385-e4b6a6a5b1b3" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Text="asdfdsss" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvElementArea="930, 702, 259, 24" CvType="InputBox" DesignTimeRectangle="932, 702, 257, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.address.street' tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.address.street' type='text' tag='INPUT' class='input' aaname='' /&gt;" Guid="35a1b00c-f1fc-45ee-a2eb-932207eaa553" InformativeScreenshot="a97fb5e35135339b5737d18d9e87a0cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Register for Free Online Account Access' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvTextArea="854, 705, 71, 16" CvTextArgument="Address:" CvType="Text" DesignTimeRectangle="856, 704, 71, 18" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Address:' check:innerText='Address:' /&gt;" Guid="491cf2e2-8c85-4072-ada7-212267866fe7" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'City'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Text="Noida" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvElementArea="930, 731, 259, 25" CvType="InputBox" DesignTimeRectangle="932, 732, 257, 21" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.address.city' tableRow='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.address.city' type='text' tag='INPUT' class='input' aaname='' /&gt;" Guid="85293140-35e5-4098-8c99-8fcc10fe3b7f" InformativeScreenshot="c1385a9fa92ec34eb16cc1ade84ef64d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Register for Free Online Account Access' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvTextArea="888, 735, 38, 17" CvTextArgument="City:" CvType="Text" DesignTimeRectangle="891, 733, 36, 18" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='City:' check:innerText='City:' /&gt;" Guid="691c94ab-c04d-4322-addf-777589a3c228" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'State'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Text="Delhi" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvElementArea="930, 760, 258, 26" CvType="InputBox" DesignTimeRectangle="932, 761, 257, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.address.state' tableRow='5' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.address.state' type='text' tag='INPUT' class='input' aaname='' /&gt;" Guid="6967d776-c638-4ad9-85e5-181a56de0a83" InformativeScreenshot="a1466c5d96d1e8e52306fad1b7065a06.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Register for Free Online Account Access' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvTextArea="880, 763, 45, 15" CvTextArgument="State:" CvType="Text" DesignTimeRectangle="882, 762, 45, 18" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='State:' check:innerText='State:' /&gt;" Guid="116e21f9-69d6-480c-bd9e-ac46f3cd052c" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Zip Code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Text="201301" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvElementArea="930, 789, 259, 25" CvType="InputBox" DesignTimeRectangle="932, 790, 257, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.address.zipCode' tableRow='6' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.address.zipCode' type='text' tag='INPUT' class='input' aaname='' /&gt;" Guid="d6de4a06-38a5-45aa-9aee-f4c200a57dfb" InformativeScreenshot="f537f5a1fbef5c329ab3e930515058c1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Register for Free Online Account Access' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvTextArea="849, 793, 76, 17" CvTextArgument="Zip Code:" CvType="Text" DesignTimeRectangle="852, 792, 75, 18" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Zip Code:' check:innerText='Zip Code:' /&gt;" Guid="c74d3a66-33e9-4735-bf76-79e9132deb8a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Phone #'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Text="1234567543" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvElementArea="930, 819, 259, 24" CvType="InputBox" DesignTimeRectangle="932, 820, 257, 21" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.phoneNumber' tableRow='7' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.phoneNumber' type='text' tag='INPUT' class='input' aaname='' /&gt;" Guid="38d9126d-81e6-4a22-b178-7030901b60c0" InformativeScreenshot="c67b8c37a02be0525cd8a97dae77b28d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Register for Free Online Account Access' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvTextArea="856, 822, 69, 15" CvTextArgument="Phone #:" CvType="Text" DesignTimeRectangle="858, 821, 69, 18" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Phone #:' check:innerText='Phone #:' /&gt;" Guid="05ceba78-df37-4a6c-99a9-eb58b14ae7da" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'SSN'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Text="123456" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvElementArea="929, 848, 260, 24" CvType="InputBox" DesignTimeRectangle="932, 849, 257, 21" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.ssn' tableRow='8' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.ssn' type='text' tag='INPUT' class='input' aaname='' /&gt;" Guid="ea313629-8037-4876-9ee3-57952f0572f3" InformativeScreenshot="1b8b3ad91d93b0e91fd0bc3c3d2a75e6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Register for Free Online Account Access' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b551ce54-3143-4bac-9bce-60a3466cd277" CvTextArea="886, 851, 40, 15" CvTextArgument="SSN:" CvType="Text" DesignTimeRectangle="888, 850, 39, 18" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='8' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='SSN:' check:innerText='SSN:' /&gt;" Guid="7f00f6f2-f98e-4bef-a212-185cf01d54fb" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Text="fdgrd@123" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" CVScreenId="85b25e91-72d8-4845-a7c7-0a2a7cb2a3ee" CvElementArea="930, 906, 259, 25" CvType="InputBox" DesignTimeRectangle="932, 907, 257, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.username' tableRow='10' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.username' type='text' tag='INPUT' class='input' aaname='' /&gt;" Guid="d2bb07cf-22ce-475d-8147-ad5705ef9ced" InformativeScreenshot="b2e868828dc7fde81335009298366c79.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Register for Free Online Account Access' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="85b25e91-72d8-4845-a7c7-0a2a7cb2a3ee" CvTextArea="841, 910, 85, 16" CvTextArgument="Username:" CvType="Text" DesignTimeRectangle="843, 909, 84, 18" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='10' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Username:' check:innerText='Username:' /&gt;" Guid="e4561af3-2101-4c1d-9c72-6c109eccde4a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Text="12345678" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" CVScreenId="c4398432-2d09-4d1f-9e48-e9f03d537389" CvElementArea="930, 810, 259, 25" CvType="InputBox" DesignTimeRectangle="932, 812, 257, 21" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.password' tableRow='11' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='customer.password' type='password' tag='INPUT' class='input' aaname='' /&gt;" Guid="570995b8-e1f9-4afc-b83c-06d877a94e58" InformativeScreenshot="bccec4ac0e6bf7206243f628a70ac2ed.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Register for Free Online Account Access' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c4398432-2d09-4d1f-9e48-e9f03d537389" CvTextArea="843, 815, 82, 15" CvTextArgument="Password:" CvType="Text" DesignTimeRectangle="844, 813, 83, 18" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='11' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Password:' check:innerText='Password:' /&gt;" Guid="4c6da46e-342b-4b3b-b91b-ddb3f2017d7f" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Confirm'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Text="12345678" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" CVScreenId="c4398432-2d09-4d1f-9e48-e9f03d537389" CvElementArea="929, 840, 261, 24" CvType="InputBox" DesignTimeRectangle="932, 841, 257, 21" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='repeatedPassword' tableRow='12' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='repeatedPassword' type='password' tag='INPUT' class='input' aaname='' /&gt;" Guid="8a2ff895-d694-4569-943b-c91584ae1687" InformativeScreenshot="f1d114a3a14055af06013935e04600f4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Register for Free Online Account Access' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c4398432-2d09-4d1f-9e48-e9f03d537389" CvTextArea="858, 843, 67, 15" CvTextArgument="Confirm:" CvType="Text" DesignTimeRectangle="859, 842, 68, 18" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='12' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Confirm:' check:innerText='Confirm:' /&gt;" Guid="c7cc5dd0-255b-41d6-83de-bb9377ae791f" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cd05715f-0041-46b0-8b42-406a9f4a6bdd" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" CVScreenId="0b2ca22c-5b9b-45dd-8569-8ecd82b972e4" CvElementArea="929, 857, 107, 28" CvTextArea="949, 862, 67, 13" CvTextArgument="REGISTER" CvType="Button" DesignTimeRectangle="932, 859, 104, 24" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='13' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='button' aaname='Register' check:text='Register' /&gt;" Guid="83082c98-72b4-4ab9-98ef-dadbf81fdc52" InformativeScreenshot="d970c6bd9f114cd9c9c3a3ae710b6887.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Register for Free Online Account Access' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="0b2ca22c-5b9b-45dd-8569-8ecd82b972e4" CvTextArea="858, 832, 67, 15" CvTextArgument="Confirm:" CvType="Text" DesignTimeRectangle="859, 831, 68, 18" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='12' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Confirm:' check:innerText='Confirm:' /&gt;" Guid="6bcc7be3-a85a-41a3-8ce0-300386b11475" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="353.6,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Login Successfull&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAuUSURBVFhHtZgJdJTVFcdHliwkgQQoCIEQAoRklswkwxayhyABElCgaG3lCFrqgh494mmrAbR42p4qO5EQEgibLbgUi1JlyUJYBA5UEesaBLKBkI0kJJmZd0//9703k2HRA1rfOf/zv/d+b777m/t9mZl8hh+7Do6NDrqYFjfvYpp9HXT4Upr90sVUuwsx61Jtmv3kxdS4DdVpcbOOjY0O1S/7+ZYl0L/bQwP7RlSnxs4FzB40bwMQwYVyO9V65RzXIobY22tTYvfWptgemTOgj8ka6O+rT/v/Wff1CzFVptievpQ2qhwA7QDgxpAGSpEQVJuCWkqshKpRNVGTGivjGtSVx52pSbEuvhfn1Kf/8SspONBveWTYA18lWkt4YtyYgSSMBFIwcAbQEKgpoOuVbBPVybFUnWyT8RfjLQdfiwybwz10uztbpgD/kI/jY5aiWRXkUo1jJZSeCIuB0NAj4Qbx1JI8YHAbVSdJCciFvObEGGOOMcC/p257e6tHly4+ACmUAF4NZRN18s6GqqmqwavgWqhZkVtFdSI80Upuh9hlXAmHCrmnbv/DyxToH4J3XeiZAjdScN4gEgDN4dwQsQRQriUh0FzFCfAE5AkxBME74wvs4y2FfNU0xq1XUkig36mx5j9pEM9UtGuhEU9GA0ASoBMEzRFzY1lXEB4xzE0aLyVOjo7+U1LPHt9/Ty6LHDwHk6mVl4LBNIBu7nE5CQWlYFhohKmw83S0Q+MtckKsSgUCoTbewk4X4rXL2Fz1asTABzTO9Wta32Dzf+PNZTdMpxPAA+HRTdNheU1EyyLOKymI8WZxPh6AAOMaYi0zy/Xp6Oiy7D69zBpLLf+IYN+ZKycvKr5vjLigQPhdSwAevWrKJ9c5O/ZVpY8Rtb/7DTX/ezd1fFtBwukkEi6ithpyXXyHnJ/NJ+exBHJ+ZCfn0Vjh/AhiPxqLPI5rqi7dpnNbm+uE7Wl7tH83jWcw9EkPN43eMv3MK8+l0ZepVg3Cl8Ht6t2733FVZpK4/PwCav/mK+LlcAqqb3FRdb1SQ6uLOhxCHhMNx8j5+TPkOpECQBtgrBDDSKn8iBWxlRyyZhWOo9by+TN6R2g8g8G2Zfqjtm33ivT1WbRn5mgJgksgL4v7EuD+4EtDldnponHrRuFsbCAnhvXJeQe9caSNXnqnhRZsbqYFW5pp6bstVFh6jU5+65B7yNFIrupNwnkyA0AxxECOI3DAuI7GADBG5qpm4bzddSxmrsYzGGK3Td9r2zZdQLRgSYa+HwA4jqHMdE5JVE5KoMathcLVfJUaMLG1e6/R7LVNlPBKA9kXX69xLzXQrDVNcg/vJedVclXhjR1PAqAFMgvHEbN0CHAyhkw6N+2RcNF/mxhq3TqtnQGtW6fTqKJptOnheHFunEnLrByQlxY+KSfX2Cro2e3NFP+ygoljLVJyA3KNnfc8u71FQgoHpv75UxrKBECTBpJOzsPsRkzZyIBtFdtDgwy2bdkzYzZnU8zmaVA2WbdMo8T12eJ0skV8O9bIorPQefxAaD1+FJdM0Jp9rZhQPcUuuj2Nwd7Ve1vla0XLV+T6aBRgooWWjqPIIWN2rfKoeQbr5uwCSxEDZgsFCsiiLPHnJxPpm3FGcXYMAKHaxx+WNz3fVzNWNZEtp14JAJ74VtLHZ61ppI9xv/JynX5QgmgxHDQSUB4JxyF4eWQeA56yFGURJBjUHWesyhS7p8eJs6OjWdS0603qwF9rfsk1GrVENbXegca9XE/bDrfJKbouvQuwkeQ8FMkSXgIcHHJwfCjysMGyOavFsglQkHnTVOVFU4W1cIpYuDBJnE4wigoAOmtrcB8JWvJOM8Xk1N0k6w2xGyzmxc5azlvNVN+Me7G1As1HAM6t4SwAehwahgkOu2TQYMK8cSp5SeYJuZli54w4UWEfKYTLRVV1Lnqs6CpZ0JTFjd2xzL3iW9Xmb2yiSpwDn+jcXAogEkYpQjjLI1QNjuMuA+Bcxo1ThKlwChkh6QWTZQyJ376YTKcwRf6W4JNzE/MLV6A6MqOpx93iXIr36H1a8zc1yTfJ3zaO8qGAGCrYIUIMhUt3lIejFs5OBtPGqd8ZCycLCVQwWYEyoJKIWZ8pin4Zh6+yb+TleeHNq2RCYxMaKr9R31e/Qovebpa3iWirIsdBwBwcAh8iIIYTnMtaOdfCOG8xGAumHIkGjNSGTMFu3MB5JktwbfJf0+l88XvkwA2+5dA1si+5QkaAGNH0dmVddIXyilvlH5qr5u8ACwNMmHSlwQCS8orDTjJgHiAUEANyrBW1YZKIQo21ZMOT8iPi1DkHZa9soGg0ZRn/qACi4d8nPp61ooFOnO2Q53B9MhsTGiRhnNIHkaNskIzZtYSjNLTAEJWf+YgCgfIniej8SYSaFsdczxT2wmn0Zd1Z+TGx4sNW/IFcoSg0V7rsgemsKXGN9y7/oFl9UDccwuUcAZBQFqBCAajjsoHwgYALVSodMANfdWODRq6/pw0iSHiUx/kkrql6/j3isQ8WU0NbE365CHpicxNZci7TyD/cIAB55wz3xBZ+jYuutTVSx6cPSwhn2QDhLLsbU7obMCrmmqMMeSni0rvbK7b3Vf/wR66/5/1IAClNFJ2xd22iGLNpJuX/Zwc1tePzDA2Xf9BCk5fV4w/gMkUCxlu2RZdxWetpGfbw3ha85mJFHrUdMiqo0v5wKQDC3eIccpb23yvheEWsTZ8LgPYRgBixDjDrJiowOHLyridu+RXln9pBDdeacMmIjld0UO7+Fnrhras0r6CB5kK/33mVig624n7tkHt4754zW+l0yTjRLgH6sQAjXesXbmF6/chV3P9RjWcwBCUMjADEQYYY8TpDZcAz2Gm4rGWI4RDDso8unEHz9+SIw5Un5U3fjh+nPKXKOiddgOrwccQ/Ynl9caWCHsfel99OE43FPCGG6AuIvu6YHCUQx3BnCY6V9P10frZf55MHn8FB3YauSntq+LqMNgDQ8FwJBJgJXrGClnku4F+fKCz4gfvgrudox2fv09d15zEtp9TXdefon1/so9lvP0WW/CxKzE8RlXtxf5X0YQGkDwA9scw7497UXhy8KG5k1+uf3wTY+5vCX0suHbZ2gmtY7gQBB4zSsNx04lxLHvNySB5Hzp4ucMtwLI+PyE0Ta3fiu7wkBJPpDZAQQITIXMbF8GKuBcu47r1eZfend7/1c5u+v456ACevjliTTizdUErXhHTdnF0pzX0ctTS1R++dVjBOXN7XB0DBLEBBxTJmKI5l7ijuxard8Lz/Qxrn5uUXFewX9sr4pUPXcBMpNNLNV8NXp4mhcHVcQ3jX2JG795tzk0Xxv/CBW9yLBSB4SU/EUuSUHgQwKXF+Z1DOhLiuP/wwySc0MCRidfpGbiQbX6dUd035Ku9jnfvD5b5U8czmGHF1vxsoyC1yHGAPFMoZLpAc+4M2Wod1uc2HSD5dfNCgcOiqVDRMFeFwbqobKwDAybo+Juu8X9VE4uvx4vju/tRxgEEAwC6hZKzyAwGoBSAOKAz0M9zewyP36j4woOegl+JzhqxIqRmyMkVokVd8vVbIY/L48FVJ4tXtI6hlP0P0AEAP7f7kPOAvHPv9MTE/p/OAX9W5HX5LY4bd1Vu3vbPlGxns2+f+yDlhf0k4CAARBoCwlckKZgV7sgiTQn15MmopFL4ymbLy4sSJ3fhskzB+DMNQMgYU3Lf98i7f0vyF3e7PsN/10x8HB8T1Mw1ZnrIYIGcAIhjG7YOXJYnBDMnx8iSKXJlIef8YQi37GMgXcNA+6ch92qFy54GAp2endbn++ctPXT6DA30D4weYAPIotHfwsuR2D6BbAJyYa6crH/Il9BGOfT7au7fB38flnTs/q1uEPbJr53OXn2uF5owNxSWdBagCwJ0CbCucdr2FXygHun/n2N/9iHO/T56juOu8s28EBemX3eEyGP4HrLauaaXfYekAAAAASUVORK5CYII=" InformativeScreenshot="4245e6d918da8be01ad50f110539fb66.jpg" Selector="&lt;html app='chrome.exe' title='ParaBank | Welcome | Online Banking' /&gt;" Title="ParaBank | Welcome | Online Banking" Url="https://parabank.parasoft.com/parabank/index.htm" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ParaBank | Customer Created" sap:VirtualizedContainerService.HintSize="449.6,6212.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,5972.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="res1" />
+              <Variable x:TypeArguments="x:String" Name="res2" />
+              <Variable x:TypeArguments="x:String" Name="status" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Experience the'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" DesignTimeRectangle="9, 182, 1920, 794" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='BODY' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BODY' type='' class='' aaname=' &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;    &amp;#x9;  ' check:innerText='Experience the difference&amp;#xA;&amp;#xA;Solutions&amp;#xA;About Us&amp;#xA;Services&amp;#xA;Products&amp;#xA;Locations&amp;#xA;Admin Page&amp;#xA;home&amp;#xA;about' /&gt;" Guid="275e1140-7351-46c3-96a1-cfd425dcf18d" InformativeScreenshot="29533debb5c4bea2d5cf77683f6d667e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Customer Created' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Admin Page'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/register.htm" CVScreenId="7bd9cfff-5ef3-4439-8edf-b353da7a5b21" CvTextArea="551, 425, 92, 18" CvTextArgument="Admin Page" CvType="Text" DesignTimeRectangle="535, 420, 172, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Admin Page' parentid='headerPanel' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Admin Page' parentid='headerPanel' tag='A' type='' class='' check:innerText='Admin Page' /&gt;" Guid="a1c1a917-0dad-4751-b4cb-587dc5ed519a" InformativeScreenshot="225e67333a37100ec994c3fdf33d3104.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Customer Created' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="7bd9cfff-5ef3-4439-8edf-b353da7a5b21" CvTextArea="551, 425, 92, 18" CvTextArgument="Admin Page" CvType="Text" DesignTimeRectangle="551, 425, 91, 17" ElementType="Text" Guid="4c9b963c-bd96-4e0f-bbbf-b3463746ba83" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'unchecked'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NCheck_5" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="1970b8dc-2346-494f-b481-df0b1a378f67" DesignTimeRectangle="811, 709, 250, 16" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='accessMode1' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='accessMode1' type='radio' tag='INPUT' class='input' aaname='' /&gt;" Guid="0e32a43d-3c07-4649-b0ba-587e8133436e" InformativeScreenshot="44b712e1382601e678d8a6819e493163.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1970b8dc-2346-494f-b481-df0b1a378f67" CvTextArea="910, 735, 47, 16" CvTextArgument="SOAP" CvType="Text" DesignTimeRectangle="785, 707, 302, 74" FullSelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;  SOAP  &amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='SOAP' /&gt;" Guid="2ff9d33e-4250-4ac7-a56f-2e8287bcd01f" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'unchecked'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NCheck_6" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="1970b8dc-2346-494f-b481-df0b1a378f67" DesignTimeRectangle="1115, 709, 250, 16" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='accessMode2' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='accessMode2' type='radio' tag='INPUT' class='input' aaname='' /&gt;" Guid="abea1213-cd3a-47d0-b040-a9550d3a542b" InformativeScreenshot="0676a30ad009ae3c9d8b81a07a9c7ef0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1970b8dc-2346-494f-b481-df0b1a378f67" CvElementArea="1228, 706, 22, 22" CvTextArea="1193, 735, 92, 18" CvTextArgument="REST (XML)" CvType="RadioButton" DesignTimeRectangle="1089, 707, 302, 74" FullSelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;  REST (XML)  &amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='REST (XML)' /&gt;" Guid="a6c48204-0727-40a9-86fe-604bc592961a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'unchecked'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NCheck_7" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="1970b8dc-2346-494f-b481-df0b1a378f67" DesignTimeRectangle="811, 785, 250, 16" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='accessMode3' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='accessMode3' type='radio' tag='INPUT' class='input' aaname='' /&gt;" Guid="5dcf32c2-48a0-4b58-aa19-233787e57882" InformativeScreenshot="6715ecaaa57e99ee440910f2cb91dff1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1970b8dc-2346-494f-b481-df0b1a378f67" CvElementArea="925, 782, 20, 21" CvTextArea="883, 811, 103, 18" CvTextArgument="REST (JSON)" CvType="RadioButton" DesignTimeRectangle="785, 783, 302, 50" FullSelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;  REST (JSON)' check:innerText='REST (JSON)' /&gt;" Guid="332b21b1-feda-484c-95c0-90ec1621d682" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'unchecked'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NCheck_8" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="1970b8dc-2346-494f-b481-df0b1a378f67" DesignTimeRectangle="1115, 785, 250, 16" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='accessMode4' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='accessMode4' type='radio' tag='INPUT' class='input' aaname='' /&gt;" Guid="e930faaa-31af-41e6-9113-39fa8bd14c22" InformativeScreenshot="4cc45ef29db1e36c1a394a39f7bb6b13.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1970b8dc-2346-494f-b481-df0b1a378f67" CvElementArea="1228, 782, 22, 22" CvTextArea="1211, 811, 51, 16" CvTextArgument="JDBC*" CvType="RadioButton" DesignTimeRectangle="1089, 783, 302, 50" FullSelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;  JDBC*' check:innerText='JDBC*' /&gt;" Guid="de086727-3e08-4c46-a020-fcafd327eae7" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'SOAP Endpoint'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Text="Python" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" DesignTimeRectangle="891, 777, 507, 21" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='soapEndpoint' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='soapEndpoint' type='text' tag='INPUT' class='inputLarge' aaname='' /&gt;" Guid="003593e4-5e99-4b54-bba3-7634c7415e0a" InformativeScreenshot="4559c885ef5b7ee680d6248fcbe947e2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="810, 766, 76, 42" FullSelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='SOAP Endpoint:' check:innerText='SOAP Endpoint:' /&gt;" Guid="8689d261-278f-47b1-818a-bc6b9f3cd312" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'REST Endpoint'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Text="Automation" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" DesignTimeRectangle="891, 830, 507, 21" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='restEndpoint' tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='restEndpoint' type='text' tag='INPUT' class='inputLarge' aaname='' /&gt;" Guid="e0345d48-5bc5-403b-b8df-10cdf637595b" InformativeScreenshot="d631471a5cb4f75ff7b071008baf8484.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="810, 819, 76, 42" FullSelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='REST Endpoint:' check:innerText='REST Endpoint:' /&gt;" Guid="0356942f-aec2-4040-a098-f23ba9c3185f" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Endpoint'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Text="AutoPhase" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" DesignTimeRectangle="891, 611, 507, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='endpoint' tableRow='7' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='endpoint' type='text' tag='INPUT' class='inputLarge' aaname='' /&gt;" Guid="49548911-67cc-473b-bdbd-2ab8d01ec908" InformativeScreenshot="5302c97e6f432d5578120b2ba72d3987.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1970b8dc-2346-494f-b481-df0b1a378f67" CvElementArea="805, 607, 107, 28" CvTextArea="825, 612, 65, 13" CvTextArgument="INITIALIZE" CvType="Button" DesignTimeRectangle="776, 609, 111, 26" FullSelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='' check:innerText='Endpoint:' /&gt;" Guid="1b1e420a-2be6-4925-8f80-fdee399b3b62" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Init. Balance'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_22" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Text="1234" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="f2b08c1a-d61c-4109-b7a5-8ddd4ed6f3ac" CvElementArea="929, 727, 260, 26" CvType="InputBox" DesignTimeRectangle="932, 729, 257, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='initialBalance' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='initialBalance' type='text' tag='INPUT' class='input' aaname='' /&gt;" Guid="0dda5442-6514-4c35-9881-e04c6628f454" InformativeScreenshot="504284744153f94ff858ddd1e168ffb8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f2b08c1a-d61c-4109-b7a5-8ddd4ed6f3ac" CvTextArea="810, 731, 102, 16" CvTextArgument="Init. Balance:" CvType="Text" DesignTimeRectangle="812, 730, 101, 18" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Init. Balance:' check:innerText='Init. Balance:' /&gt;" Guid="2421f440-0253-4dbe-9a43-0a1323a2db61" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Min. Balance'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Text="56789" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="f2b08c1a-d61c-4109-b7a5-8ddd4ed6f3ac" CvElementArea="930, 757, 260, 25" CvType="InputBox" DesignTimeRectangle="932, 758, 257, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='minimumBalance' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='minimumBalance' type='text' tag='INPUT' class='input' aaname='' /&gt;" Guid="4ae99f32-8887-496b-80e5-ee6dd023f1ec" InformativeScreenshot="a7d1e442bdfc5d23dec128a17568006e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f2b08c1a-d61c-4109-b7a5-8ddd4ed6f3ac" CvTextArea="806, 761, 106, 16" CvTextArgument="Min. Balance:" CvType="Text" DesignTimeRectangle="809, 760, 104, 18" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Min. Balance:' check:innerText='Min. Balance:' /&gt;" Guid="a8df4e51-91b6-44de-bd2a-caff013c95bf" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NSelectItem DisplayName="Select Item 'Loan Provider'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="Local" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="3">
+                  <x:String>JMS</x:String>
+                  <x:String>Web Service</x:String>
+                  <x:String>Local</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="f2b08c1a-d61c-4109-b7a5-8ddd4ed6f3ac" CvElementArea="929, 843, 178, 25" CvType="InputBox" DesignTimeRectangle="932, 845, 175, 21" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProvider' tableRow='4' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProvider' type='' tag='SELECT' class='input' aaname='' /&gt;" Guid="613c9cc1-a091-4d73-9d07-dd9439fe0f77" InformativeScreenshot="0116de1da4d3f6e024342d233af6e0f0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f2b08c1a-d61c-4109-b7a5-8ddd4ed6f3ac" CvTextArea="810, 847, 116, 15" CvTextArgument="Loan Provider:" CvType="Text" DesignTimeRectangle="812, 846, 115, 18" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Loan Provider:' check:innerText='Loan Provider:' /&gt;" Guid="91f831b1-9b61-41a0-ad73-5f9da0f301cc" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Loan Provider'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_8" Item="Web Service" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="3">
+                  <x:String>JMS</x:String>
+                  <x:String>Web Service</x:String>
+                  <x:String>Local</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="f2b08c1a-d61c-4109-b7a5-8ddd4ed6f3ac" CvElementArea="929, 843, 178, 25" CvType="InputBox" DesignTimeRectangle="932, 845, 175, 21" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProvider' tableRow='4' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProvider' type='' tag='SELECT' class='input' aaname='' /&gt;" Guid="cdca21d8-2626-46de-8f6e-a9195e30f9bb" InformativeScreenshot="5e5786c8918f452fd12caa37f5d8d451.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f2b08c1a-d61c-4109-b7a5-8ddd4ed6f3ac" CvTextArea="810, 847, 116, 15" CvTextArgument="Loan Provider:" CvType="Text" DesignTimeRectangle="812, 846, 115, 18" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Loan Provider:' check:innerText='Loan Provider:' /&gt;" Guid="d474fa48-2b9b-4c8a-a872-21588e7c7417" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Loan Provider'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_9" Item="JMS" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="3">
+                  <x:String>JMS</x:String>
+                  <x:String>Web Service</x:String>
+                  <x:String>Local</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="f2b08c1a-d61c-4109-b7a5-8ddd4ed6f3ac" CvElementArea="929, 843, 178, 25" CvType="InputBox" DesignTimeRectangle="932, 845, 175, 21" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProvider' tableRow='4' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProvider' type='' tag='SELECT' class='input' aaname='' /&gt;" Guid="253aa02c-dae8-4163-8dde-05576287e0cc" InformativeScreenshot="e43951484a91525f0e405ae1759f6e1f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f2b08c1a-d61c-4109-b7a5-8ddd4ed6f3ac" CvTextArea="810, 847, 116, 15" CvTextArgument="Loan Provider:" CvType="Text" DesignTimeRectangle="812, 846, 115, 18" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Loan Provider:' check:innerText='Loan Provider:' /&gt;" Guid="39faa61b-772d-4120-b7da-e5e7debc6bca" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Loan Processor'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_10" Item="Combined" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="3">
+                  <x:String>Available Funds</x:String>
+                  <x:String>Down Payment</x:String>
+                  <x:String>Combined</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="37be280b-1de3-44d7-a665-80ae8059d7f3" CvElementArea="929, 873, 178, 24" CvType="InputBox" DesignTimeRectangle="932, 874, 175, 21" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProcessor' tableRow='5' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProcessor' type='' tag='SELECT' class='input' aaname='' /&gt;" Guid="c2b0a581-4d67-49f3-a052-7312eb58a5dd" InformativeScreenshot="884ff2237cf03ed64637cac7c8ee867e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="37be280b-1de3-44d7-a665-80ae8059d7f3" CvTextArea="796, 876, 130, 16" CvTextArgument="Loan Processor:" CvType="Text" DesignTimeRectangle="799, 875, 128, 18" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Loan Processor:' check:innerText='Loan Processor:' /&gt;" Guid="9e55d248-8f40-412c-95d0-ba8674826f7b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Loan Processor'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_11" Item="Down Payment" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="3">
+                  <x:String>Available Funds</x:String>
+                  <x:String>Down Payment</x:String>
+                  <x:String>Combined</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="76ebd8e6-2520-42c8-8549-6f236f8406e2" CvElementArea="929, 873, 178, 24" CvType="InputBox" DesignTimeRectangle="932, 874, 175, 21" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProcessor' tableRow='5' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProcessor' type='' tag='SELECT' class='input' aaname='' /&gt;" Guid="f1496412-9d69-44f7-b73f-1f361a4dc841" InformativeScreenshot="e8102f5b213aeb70020b7db8cf30b8d6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="76ebd8e6-2520-42c8-8549-6f236f8406e2" CvTextArea="796, 876, 130, 16" CvTextArgument="Loan Processor:" CvType="Text" DesignTimeRectangle="799, 875, 128, 18" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Loan Processor:' check:innerText='Loan Processor:' /&gt;" Guid="76f80c18-7d37-46d9-bb2a-aa56b376e342" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Loan Processor'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_12" Item="Available Funds" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="3">
+                  <x:String>Available Funds</x:String>
+                  <x:String>Down Payment</x:String>
+                  <x:String>Combined</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="76ebd8e6-2520-42c8-8549-6f236f8406e2" CvElementArea="929, 873, 178, 24" CvType="InputBox" DesignTimeRectangle="932, 874, 175, 21" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProcessor' tableRow='5' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProcessor' type='' tag='SELECT' class='input' aaname='' /&gt;" Guid="19c65e6c-a120-42b7-8b38-83ba61a8dfcf" InformativeScreenshot="1b4aee26a39fbe809c5cd7de20d05959.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="76ebd8e6-2520-42c8-8549-6f236f8406e2" CvTextArea="796, 876, 130, 16" CvTextArgument="Loan Processor:" CvType="Text" DesignTimeRectangle="799, 875, 128, 18" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Loan Processor:' check:innerText='Loan Processor:' /&gt;" Guid="4d42a464-402c-4809-934c-ba8eaf26971d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Threshold'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_24" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Text="25" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="76ebd8e6-2520-42c8-8549-6f236f8406e2" CvElementArea="929, 902, 74, 24" CvType="InputBox" DesignTimeRectangle="932, 903, 70, 21" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProcessorThreshold' tableRow='6' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl id='loanProcessorThreshold' type='text' tag='INPUT' class='inputSmall' aaname='' /&gt;" Guid="a4d152fb-7805-43a4-9a70-4854e7e3d897" InformativeScreenshot="23e7ea5af993dfbc7036b26779c20a3f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="76ebd8e6-2520-42c8-8549-6f236f8406e2" CvTextArea="841, 906, 83, 15" CvTextArgument="Threshold:" CvType="Text" DesignTimeRectangle="843, 904, 84, 18" FullSelectorArgument="&lt;webctrl class='form2' idx='2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form2' parentid='adminForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Threshold:' check:innerText='Threshold:' /&gt;" Guid="4f5e4c89-97b5-44b3-8133-4967d60b8ca6" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm" CVScreenId="76ebd8e6-2520-42c8-8549-6f236f8406e2" CvElementArea="765, 958, 92, 28" CvTextArea="786, 963, 48, 13" CvTextArgument="SUBMIT" CvType="Button" DesignTimeRectangle="768, 959, 88, 24" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='adminForm' tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='adminForm' tag='INPUT' type='submit' class='button' aaname='Submit' check:text='Submit' /&gt;" Guid="c1c34624-2ec0-4003-b664-49b94e7c2b91" InformativeScreenshot="01b2475626e5baa97a1fbd55dc1b3b0a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Initialize'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/db.htm" CVScreenId="dc9ea957-1e65-4137-8cfa-52d033e74e5f" CvElementArea="805, 643, 107, 28" CvTextArea="825, 650, 66, 13" CvTextArgument="INITIALIZE" CvType="Button" DesignTimeRectangle="808, 645, 103, 24" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='BUTTON' class='button' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Initialize &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='INITIALIZE' /&gt;" Guid="98cbd6ec-31ca-48e8-b0de-3d753cca0b8f" InformativeScreenshot="435c5860bc2a2410b982ef296c33bf1b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="dc9ea957-1e65-4137-8cfa-52d033e74e5f" CvTextArea="768, 615, 86, 17" CvTextArgument="Database" CvType="Text" DesignTimeRectangle="770, 612, 316, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='H3' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;Database &amp;#x9;&amp;#x9;' check:innerText='Database' /&gt;" Guid="b438aab4-59ff-4377-a27f-db0833ba94c6" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Administration'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" TextString="[res1]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/db.htm" CVScreenId="6f5fe4be-0400-43ba-b22a-16de60ec2374" CvTextArea="766, 578, 153, 15" CvType="AnyWordGroup" DesignTimeRectangle="768, 577, 151, 18" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='rightPanel' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='rightPanel' tag='B' type='' class='' /&gt;" Guid="c618ce4c-3d97-495d-bd0b-fb8efda3c803" InformativeScreenshot="8dcd9bdb690c41c0eff14ac9811547bc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="6f5fe4be-0400-43ba-b22a-16de60ec2374" CvTextArea="765, 531, 161, 21" CvTextArgument="Administration" CvType="Text" DesignTimeRectangle="768, 531, 628, 31" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='title' aaname=' &amp;#x9;Administration ' check:innerText='Administration' /&gt;" Guid="3f5cf84b-2a8d-4051-98ec-a9c20dd9cfa1" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="353.6,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[res1.ToString]" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Clean'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/db.htm" CVScreenId="58ebf6e2-2758-4d8a-bbe2-fac8c20cc272" CvElementArea="968, 643, 86, 29" CvTextArea="988, 650, 45, 12" CvTextArgument="CLEAN" CvType="Button" DesignTimeRectangle="971, 645, 82, 24" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Clean &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Clean &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' type='submit' tag='BUTTON' class='button' check:innerText='CLEAN' /&gt;" Guid="722a2471-2f88-4a6b-83c1-1ecd19b09f0a" InformativeScreenshot="20e57f5957e70a21551ef85d90c880f6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="58ebf6e2-2758-4d8a-bbe2-fac8c20cc272" CvTextArea="768, 615, 86, 17" CvTextArgument="Database" CvType="Text" DesignTimeRectangle="770, 612, 316, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='H3' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;Database &amp;#x9;&amp;#x9;' check:innerText='Database' /&gt;" Guid="b8bbe3c1-be83-4f6e-88ce-e68f1cdc3423" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Administration'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" TextString="[res2]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/db.htm" CVScreenId="58ebf6e2-2758-4d8a-bbe2-fac8c20cc272" CvTextArea="766, 578, 142, 15" CvType="AnyWordGroup" DesignTimeRectangle="768, 577, 140, 18" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='rightPanel' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='rightPanel' tag='B' type='' class='' /&gt;" Guid="bbd67f0b-cf5e-4d45-9546-fbd4219cf584" InformativeScreenshot="474e6be6f8fb0bc44a4c2f84602e9f96.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="58ebf6e2-2758-4d8a-bbe2-fac8c20cc272" CvTextArea="765, 531, 161, 21" CvTextArgument="Administration" CvType="Text" DesignTimeRectangle="768, 531, 628, 31" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='title' aaname=' &amp;#x9;Administration ' check:innerText='Administration' /&gt;" Guid="b28dde5c-1c95-4c3c-9c71-630686c1f801" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="353.6,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[res2.ToString]" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Shutdown'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/db.htm" CVScreenId="58ebf6e2-2758-4d8a-bbe2-fac8c20cc272" CvElementArea="1252, 643, 117, 29" CvTextArea="1271, 648, 75, 15" CvTextArgument="SHUTDOWN" CvType="Button" DesignTimeRectangle="1254, 645, 113, 24" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl parentname='toggleJms' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='toggleJms' tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='button' aaname='Shutdown' check:text='Shutdown' /&gt;" Guid="f889d434-d456-4417-ad67-663b3ad68ad6" InformativeScreenshot="d03411f1f0040a603f9d6d7f52df0472.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Status'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="d5db5bd7-468f-4b01-95bf-d0c8e729ef45" TextString="[status]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://parabank.parasoft.com/parabank/admin.htm?isJmsRunning=true&amp;loanProviders=jms&amp;loanProviders=ws&amp;loanProviders=local&amp;loanProcessors=funds&amp;loanProcessors=down&amp;loanProcessors=combined&amp;message=jms.shutdown.success" CVScreenId="1eb4c39a-9304-48f1-bcd5-abbda8578c61" CvTextArea="1185, 612, 62, 18" CvType="AnyWordGroup" DesignTimeRectangle="1187, 607, 63, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl parentname='toggleJms' tableRow='1' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='toggleJms' tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' class='' /&gt;" Guid="d312c7a5-1247-4a2d-afe3-da308aa2af33" InformativeScreenshot="f7119364c34016a5e8e3a1788661e08b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ParaBank | Administration' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1eb4c39a-9304-48f1-bcd5-abbda8578c61" CvTextArea="1126, 612, 55, 15" CvTextArgument="Status:" CvType="Text" DesignTimeRectangle="1127, 611, 55, 18" FullSelectorArgument="&lt;webctrl parentname='toggleJms' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='toggleJms' tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Status:' check:innerText='Status:' /&gt;" Guid="1a422ebd-ad1d-432e-a85e-904f9535d1f1" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="353.6,110.4" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[status.ToString]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGPSURBVDhPpdO7LkRRFIDhkxkE416hQCindClc4tJMJp6BAjEZ7XSulWi8AB5CJE68AQrxCCREiw6JhP+f2WfEZFQkn9ln77XWvp0TRaU4iwKK2EAeqWj3Mqr+2bavFC+GGGPNyTpg4wOf+MI1ZjFAYgYmGteEGMYYa07BAaslyYk33MGELYyiBRdIYswp1ivwgEOsYg7DMNkV1C3gnk9xhnM4YxqOqR/T6MIenmCBK+QMcI8NaA6/nZjBOLpxhNfQZ7yrc4ueEyf8M9MYLDKFF9yG9kpoW9C4NXg+g+Xn0OmSXbqdvXBWz8AVOeYWemDsPDzcTPk5dLaFTmf02WCTLKB1nKAPI9hG5XrL/0rxEFzWUnh2Oy7bRIvadlsWbcUEKrmh4YF4MPvheRLPOIYH6XtgoQ40IjnwlME5eCVezSM24U2Y4Hkkk5jgNXrVXrlXn3eg9kVy0GBn8VBd9jIO4ARJ3J9vogVMdp878O27xzuSmF8Faj8ml+YK/ArTaKftIS/gBkly9WP6x+ccZ78Bp+WNZsFoKJgAAAAASUVORK5CYII=" InformativeScreenshot="723633dd55f6835bf2fb3751118435f5.jpg" Selector="&lt;html app='chrome.exe' title='ParaBank | Customer Created' /&gt;" Title="ParaBank | Customer Created" Url="https://parabank.parasoft.com/parabank/register.htm" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
